@@ -1,0 +1,137 @@
+@import "../../colors";
+
+.create-task-container{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+   
+
+    &--closeButton{
+        
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+
+     &--closeButton button{
+            border: none;
+     }
+
+      &--closeButton img{
+          width: 3.5rem;
+          height: 3.5rem;
+      }
+
+       &--closeButton:focus{
+           outline:none;
+       }
+        &--closeButton:active{
+            transform: translateY(0.1rem);
+        }
+
+        &--heading {
+         display: flex;
+         justify-content: center;
+        }
+        &--heading h3{
+            font-size: 2rem;
+            font-weight: 400;
+            text-align: center;
+            background: -webkit-linear-gradient($light-orange, $dark-orange);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        &-form{
+            width: 100%;
+           height: 40rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+
+            &__title {
+                width:50%;
+                margin-bottom: 3rem;
+                padding: 1rem;
+                border-radius: 3px;
+                border-color:$light-orange ;
+                        @media only screen and (max-width:700px) {
+   width: 70%;
+   
+  }
+               
+            }
+            &__title:focus{
+                outline: none;
+            }
+            &__title::placeholder{
+                font-family: inherit;
+                font-size: 1.6rem;
+            }
+
+            &__description{
+                width:50%;
+                height: 10rem;
+                 border-radius: 3px;
+                border-color:$light-orange ;
+                margin-bottom: 5rem;
+                resize: none;
+                 @media only screen and (max-width:700px) {
+   width: 70%; 
+  }
+            }
+            &__description::placeholder{
+                font-family: inherit;
+                font-size: 1.6rem;
+            }
+
+            &__description:focus{
+                outline: none;
+            }
+
+             &__buttons{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        &__buttons button{
+            width:10rem;
+            height: 4rem;
+            border-radius: 5px;
+            box-shadow: 0 20px 20px rgba(0, 0, 0, 0.16), 0 15px 20px rgba(0, 0, 0, 0.23);
+            background: $body-color;
+            border:none;
+            color:$light-orange;
+            font-weight: 800;
+            font-size: 1.5rem;
+        }
+
+         &__buttons button:focus{
+             outline: none;
+         }
+          &__buttons button:active{
+              transform: translateY(0.2rem);
+          }
+        }
+
+       
+
+        &-form {
+              width: 100%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+   @media only screen and (max-width:700px) {
+  
+   justify-content: space-between;
+  justify-content: space-evenly;
+   
+  }
+
+        }
+   
+}

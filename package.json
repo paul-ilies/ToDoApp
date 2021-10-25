@@ -1,0 +1,24 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "Personal project for portfolio",
+  "main": "index.js",
+  "scripts": {
+    "server": "npm run start --prefix server",
+    "client": "npm run start --prefix client",
+    "watch": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paul-ilies/ToDoApp.git"
+  },
+  "author": "Ilies Paul Daniel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paul-ilies/ToDoApp/issues"
+  },
+  "homepage": "https://github.com/paul-ilies/ToDoApp#readme",
+  "dependencies": {
+    "concurrently": "^6.3.0"
+  }
+}

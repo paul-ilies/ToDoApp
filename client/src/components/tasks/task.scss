@@ -1,0 +1,47 @@
+@import "../../colors";
+
+.task-container {
+  display: flex;
+  margin: 2rem;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+
+  &-title {
+    flex-basis: 80%;
+    background: #fff;
+    border-radius: 1rem;
+
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+  }
+  &-title h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: #551a8b;
+  }
+
+  &-events {
+    flex-basis: 10%;
+    margin: 0 1.5rem;
+  }
+  &-events a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #551a8b;
+  }
+  &-events button {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #551a8b;
+    cursor: pointer;
+  }
+}

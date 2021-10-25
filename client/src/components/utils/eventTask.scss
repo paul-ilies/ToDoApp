@@ -1,0 +1,36 @@
+@import "../../colors";
+
+
+.event-container{
+display: flex;
+
+   
+&-whiteCircle{
+        background: #fff;
+        border-radius: 50%;
+        width: 7rem;
+        height: 7rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+
+    &-grayCircle{
+        
+        background: $body-color;
+        border-radius: 50%;
+        width: 5rem;
+        height: 5rem;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+        
+    }
+    
+
+
+}
+
+
+
+

@@ -1,0 +1,51 @@
+@import "../colors";
+
+.single-task {
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-container {
+    width: 70%;
+    height: auto;
+    border-radius: 2rem;
+    background-color: $body-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (max-width: 900px) {
+      width: 90%;
+    }
+
+    &__title {
+      text-align: center;
+    }
+    &__description {
+      font-size: 1.5rem;
+      width: 80%;
+      word-wrap: break-word;
+      text-align: center;
+    }
+    &__buttons {
+      display: flex;
+      margin: 2rem;
+    }
+    &__buttons > * {
+      margin: 1rem;
+    }
+    &__buttons > * button {
+      border: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+      background-color: transparent;
+      cursor: pointer;
+      padding: 2.5rem 2rem;
+    }
+    &__buttons :active {
+      transform: translateY(0.1rem);
+    }
+  }
+}
